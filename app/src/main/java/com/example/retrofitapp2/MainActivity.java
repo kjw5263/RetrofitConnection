@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         RetrofitAPI service = retrofit.create(RetrofitAPI.class);
 
         HashMap<String, Object> input = new HashMap<>();
-        input.put("user_id", "0517831805");
-        input.put("user_pw", "kst1234");
+        input.put("user_id", "id");
+        input.put("user_pw", "pw");
         Log.v("kjw_input", input.toString());
         service.postData(input).enqueue(new Callback<Example>() {
             @Override
